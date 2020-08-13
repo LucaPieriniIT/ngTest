@@ -25,8 +25,9 @@ export class UserComponent implements OnInit {
       this.callerService.getData().subscribe((rs: DataRS) => {
         if (rs && rs.data) {
           for (let user of rs.data) {
-            if (this.selectedUser == null && user.id == userId) {
+            if (user.id == userId) {
               this.selectedUser = user;
+              break;
             }
           }
         }
