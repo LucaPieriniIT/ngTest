@@ -1,7 +1,6 @@
-<div class="home-wrapper">
-    <mat-spinner *ngIf="usersAvailable.length === 0">
-    </mat-spinner>
+<mat-spinner *ngIf="usersAvailable.length === 0 && usersManaged.length === 0"></mat-spinner>
 
+<div class="home-wrapper">
     <mat-card class="home-list-card">
         <mat-card-title>
             Utenti disponibili
