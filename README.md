@@ -30,6 +30,10 @@ Eseguire `ng serve` per un ambiente di sviluppo. Navigare su `http://localhost:4
 
 Eseguire `ng build` per buildare il progetto. Gli artifacts saranno posizionati nella cartella `dist/`. Usare il flag `--prod` per una production build.
 
+## Demo
+
+* [Stackblitz](https://stackblitz.com/edit/ngtest-pierini-luca)
+
 ## Built With
 
 * [Angular CLI 10.0.5](https://cli.angular.io/)
