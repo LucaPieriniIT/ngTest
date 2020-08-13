@@ -1,0 +1,21 @@
+.home-wrapper {
+    display: flex;
+    max-height: 50%;
+}
+
+.home-list-card {
+    min-width: 30%;
+    display: inline-block;
+}
+
+.home-arrow-btn {
+    margin-right: 10px;
+}
+
+.home-avatar-img {
+    cursor: pointer;
+}
+
+.home-user-name {
+    padding-left: 10px;
+}

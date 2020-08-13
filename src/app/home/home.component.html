@@ -1,0 +1,56 @@
+<div class="home-wrapper">
+    <mat-spinner *ngIf="usersAvailable.length === 0">
+    </mat-spinner>
+
+    <mat-card class="home-list-card">
+        <mat-card-title>
+            Utenti disponibili
+        </mat-card-title>
+        <mat-card-content>
+            <div *ngIf="usersAvailable.length === 0">
+                Non ci sono utenti disponibili
+            </div>
+
+            <mat-list>
+                <mat-list-item *ngFor="let user of usersAvailable">
+                    <button mat-mini-fab color="accent" (click)="manageUser(user)" class="home-arrow-btn">
+                        <mat-icon aria-hidden="false">arrow_forward</mat-icon>
+                    </button>
+                    <div>
+                        <img matListAvatar src="{{ user.avatar }}" alt="{{ user.first_name}} {{user.last_name}}" (click)="goToUserDetail(user)" class="home-avatar-img">
+                    </div>
+                    <div class="home-user-name">
+                        {{ user.first_name}} {{ user.last_name }}
+                    </div>
+                </mat-list-item>
+            </mat-list>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-divider [vertical]="true"></mat-divider>
+
+    <mat-card class="home-list-card">
+        <mat-card-title>
+            Utenti gestiti
+        </mat-card-title>
+        <mat-card-content>
+            <div *ngIf="usersManaged.length === 0">
+                Non ci sono utenti gestiti
+            </div>
+
+            <mat-list>
+                <mat-list-item *ngFor="let user of usersManaged">
+                    <button mat-mini-fab color="accent" (click)="unmanageUser(user)" class="home-arrow-btn">
+                        <mat-icon aria-hidden="false">arrow_back</mat-icon>
+                    </button>
+                    <div>
+                        <img matListAvatar src="{{ user.avatar }}" alt="{{ user.first_name}} {{user.last_name}}" (click)="goToUserDetail(user)" class="home-avatar-img">
+                    </div>
+                    <div class="home-user-name">
+                        {{ user.first_name}} {{ user.last_name }}
+                    </div>
+                </mat-list-item>
+            </mat-list>
+        </mat-card-content>
+    </mat-card>
+</div>
