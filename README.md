@@ -1,27 +1,47 @@
-# Ngtest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+# ngTest - Pierini Luca
 
-## Development server
+**[TEST ANGULAR]**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+L’obiettivo dell’applicativo è visualizzare due pagine contenenti informazioni su utenti di test, recuperate da un’API REST disponibile liberamente online.
+L’API da cui recuperare i dati è: https://reqres.in/api/users
 
-## Code scaffolding
+La prima schermata deve mostrare due elenchi di utenti: “Utenti disponibili” e “Utenti controllati”.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Lo scopo della schermata è visualizzare un elenco con i dati di base degli utenti disponibili e permettere di aggiungerli all’elenco di utenti controllati.
 
-## Build
+Ogni oggetto dell’elenco “Utenti disponibili” deve visualizzare il nome completo e l’avatar dell’utente, oltre ad un bottone che permette di marcare l’utente come “controllato”, aggiungendolo quindi all’elenco di “Utenti controllati”
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Gli “Utenti disponibili” inizialmente saranno tutti quelli recuperati dall’API.
 
-## Running unit tests
+Al click sull’avatar di un utente, l’applicativo deve navigare verso la seconda schermata.
+La seconda schermata deve mostrare tutti i dati dell’utente selezionato:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Id
+* Avatar
+* Nome completo
+* Email
 
-## Running end-to-end tests
+## Getting Started
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Eseguire `ng serve` per un ambiente di sviluppo. Navigare su `http://localhost:4200/`.
 
-## Further help
+## Building
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Eseguire `ng build` per buildare il progetto. Gli artifacts saranno posizionati nella cartella `dist/`. Usare il flag `--prod` per una production build.
+
+## Demo
+
+* [Stackblitz](https://stackblitz.com/edit/ngtest-pierini-luca)
+
+## Built With
+
+* [Angular CLI 10.0.5](https://cli.angular.io/)
+
+## Authors
+
+* **Luca Pierini** - *Initial work* - [LucaPieriniIT](https://github.com/LucaPieriniIT)
+
+## Acknowledgments
+
+L'applicazione è da intendersi solo dev-purposed. Non è stata realizzata con l'ottica di un deploy in production.
