@@ -2,6 +2,7 @@
 # ngTest - Pierini Luca
 
 **[TEST ANGULAR]**
+
 L’obiettivo dell’applicativo è visualizzare due pagine contenenti informazioni su utenti di test, recuperate da un’API REST disponibile liberamente online.
 L’API da cui recuperare i dati è: https://reqres.in/api/users
 
@@ -15,10 +16,11 @@ Gli “Utenti disponibili” inizialmente saranno tutti quelli recuperati dall�
 
 Al click sull’avatar di un utente, l’applicativo deve navigare verso la seconda schermata.
 La seconda schermata deve mostrare tutti i dati dell’utente selezionato:
-— Id
-— Avatar
-— Nome completo
-— Email
+
+* Id
+* Avatar
+* Nome completo
+* Email
 
 ## Getting Started
 
